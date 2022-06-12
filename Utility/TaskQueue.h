@@ -7,7 +7,7 @@ class TaskQueue {
 public:
   TaskQueue();
   void push(Task *task);
-  Task *pop()
+  Task *pop();
 };
 
 #endif /*TASK_QUEUE*/
