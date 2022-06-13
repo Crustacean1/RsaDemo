@@ -8,17 +8,27 @@
 #include <vector>
 
 class Parser {
-  using ServiceArgument = std::unordered_map<std::string, std::string>;
-  using GenericServiceFactory = std::function<IService(ServiceArgument &)>;
+  using GenericServiceFactory = std::function<IService *()>;
 
   std::unordered_map<std::string, GenericServiceFactory> _serviceFactories;
 
-public:
-  Parser();
+  std::unordered_map<std::string, std::string> _serviceArgs;
+  std::string _currentOption;
 
+  IService *instantiateService(const std::string &serviceName);
+
+  IService *_currentService;
+
+  bool isOption(const std::string &str);
+  std::string getOptionFullName(const std::string &str);
+
+  void parseLiteral(int &pos, int size, char **args);
+
+public:
   template <typename ServiceType> void addService(const std::string &name);
 
-  int parse(int argc, char **argv);
+  void parse(int argc, char **argv);
+  int run();
 };
 
 template <typename ServiceType>
@@ -28,9 +38,11 @@ void Parser::addService(const std::string &name) {
   }
 
   _serviceFactories.insert(
-      name, [](std::unordered_map<std::string, std::string> &args) -> IService {
-        return new ServiceType(args);
-      });
+      {name, 
+        (std::function<IService*()>)[]() -> IService * 
+        { return new ServiceType();
+}
+});
 }
 
 #endif /*PARSER*/
