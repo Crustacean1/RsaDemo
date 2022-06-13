@@ -2,10 +2,13 @@
 #define EXECUTOR
 
 #include "TaskQueue.h"
+#include <thread>
 
 class Executor{
+  std::thread * _thread;
+  TaskQueue & _queue;
   public:
-  Executor();
+  Executor(TaskQueue & queue);
   void start();
   void stop();
 };

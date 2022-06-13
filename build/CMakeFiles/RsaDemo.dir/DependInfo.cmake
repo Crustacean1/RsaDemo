@@ -12,8 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kamil/Projects/Studia/RsaDemo/Services/EncodeService.cpp" "CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o.d"
   "/home/kamil/Projects/Studia/RsaDemo/Services/GenerateService.cpp" "CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o.d"
   "/home/kamil/Projects/Studia/RsaDemo/Utility/Executor.cpp" "CMakeFiles/RsaDemo.dir/Utility/Executor.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Utility/Executor.cpp.o.d"
+  "/home/kamil/Projects/Studia/RsaDemo/Utility/IService.cpp" "CMakeFiles/RsaDemo.dir/Utility/IService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Utility/IService.cpp.o.d"
   "/home/kamil/Projects/Studia/RsaDemo/Utility/Parser.cpp" "CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o.d"
-  "/home/kamil/Projects/Studia/RsaDemo/Utility/Task.cpp" "CMakeFiles/RsaDemo.dir/Utility/Task.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Utility/Task.cpp.o.d"
   "/home/kamil/Projects/Studia/RsaDemo/Utility/TaskQueue.cpp" "CMakeFiles/RsaDemo.dir/Utility/TaskQueue.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Utility/TaskQueue.cpp.o.d"
   "/home/kamil/Projects/Studia/RsaDemo/main.cpp" "CMakeFiles/RsaDemo.dir/main.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/main.cpp.o.d"
   )

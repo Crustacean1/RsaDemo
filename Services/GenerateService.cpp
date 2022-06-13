@@ -1,6 +1,7 @@
 #include "GenerateService.h"
-#include <Numeric.h>
+#include "../Utility/TaskQueue.h"
 #include <iostream>
+#include <random>
 
 GenerateService::GenerateService() {}
 
@@ -11,30 +12,20 @@ std::string GenerateService::help() {
          "For debugging purposes run with -v or --verbose flag";
 }
 
-std::string
-GenerateService::fromArgs(const std::string &key,
-                          const std::string &defaultValue,
-                          std::unordered_map<std::string, std::string> &args) {
-  auto it = args.find(key);
-  return (it == args.end()) ? defaultValue : it->second;
-}
-
 int GenerateService::run(std::unordered_map<std::string, std::string> &args) {
+  if (IService::run(args)) {
+    return 0;
+  }
+
   std::cout << "Starting key generation of length: "
             << fromArgs("length", "-1", args) << std::endl;
-  KCrypt::Numeric a("2137");
-
-  std::cout << "Solution: " << a << std::endl;
-  std::cout << "Input some number: " << std::endl;
-
-  KCrypt::Numeric b;
-  std::cin >> b;
-  a *= b;
-  std::cout << "Mul: " << a << std::endl;
+  std::default_random_engine engine(2137);
 
   return -1;
 }
+
 GenerateService::ServiceArgumentDescription
 GenerateService::getArgumentDescription() {
-  return {{"length", "n"}, {"output", "o"}, {"entropy-source", "e"}};
+  return {
+      {"length", "n"}, {"help", "h"}, {"output", "o"}, {"entropy-source", "e"}};
 }

@@ -41,6 +41,7 @@ void Parser::parseLiteral(int &pos, int size, char **args) {
   }
   if (pos < size) {
     _currentOption = getOptionFullName(std::string(args[pos++]));
+    _serviceArgs[_currentOption]="";
   }
 }
 

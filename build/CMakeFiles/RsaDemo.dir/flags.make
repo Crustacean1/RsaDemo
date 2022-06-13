@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kamil/Projects/Studia/Numeric/numeric -I/home/kamil/Projects/Studia/RsaDemo/. -I"/home/kamil/Projects/Studia/RsaDemo/./*"
+CXX_INCLUDES = -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I"/home/kamil/Projects/Studia/RsaDemo/./*"
 
-CXX_FLAGS = 
+CXX_FLAGS =  -std=c++20 -g -std=gnu++20
 

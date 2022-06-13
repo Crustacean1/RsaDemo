@@ -7,10 +7,6 @@ class GenerateService : public IService {
   std::string _outputFile;
   size_t _keySize;
   bool _verbose;
-  std::string
-  fromArgs(const std::string &key,
-                    const std::string &defaultValue,
-                    std::unordered_map<std::string, std::string> &args);
 
 public:
 

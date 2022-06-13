@@ -3,13 +3,19 @@ project(RsaDemo)
 
 set(NUMERIC_DIR_LIB,      /home/kamil/Projects/Studia/Numeric/build/numeric/libnumeric.a)
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_BUILD_TYPE debug)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20")
 
 file(GLOB RSA_DEMO_SOURCES "./*.cpp")
-file(GLOB RSA_DEMO_DEPS "./*/*.cpp")
+file(GLOB RSA_DEMO_UTILITIES "./Utility/*.cpp")
+file(GLOB RSA_DEMO_SERVICES "./Services/*.cpp")
 
 
-add_executable(RsaDemo ${RSA_DEMO_SOURCES} ${RSA_DEMO_DEPS})
-target_link_libraries(RsaDemo /home/kamil/Projects/Studia/Numeric/build/numeric/libnumeric.a)
-target_include_directories(RsaDemo PRIVATE /home/kamil/Projects/Studia/Numeric/numeric)
+add_executable(RsaDemo ${RSA_DEMO_SOURCES} ${RSA_DEMO_UTILITIES} ${RSA_DEMO_SERVICES})
+
+target_link_libraries(RsaDemo /home/kamil/Projects/Studia/RsaDemo/lib/libnumeric.a)
+target_include_directories(RsaDemo PRIVATE ./include)
 target_include_directories(RsaDemo PRIVATE ./)
 target_include_directories(RsaDemo PRIVATE ./*)

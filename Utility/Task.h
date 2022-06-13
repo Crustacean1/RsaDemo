@@ -3,8 +3,7 @@
 
 class Task{
   public:
-  Task();
-  void run();
+  virtual void run();
 };
 
-#endif TASK
+#endif /*TASK*/
