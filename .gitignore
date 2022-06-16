@@ -1,2 +1,9 @@
 *.o
 lib/
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles
+.cmake/
+.cache/
+.clangd
+vgcore\.*

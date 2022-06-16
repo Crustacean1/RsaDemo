@@ -1,7 +1,7 @@
 #ifndef GENERATE_SERVICE
 #define GENERATE_SERVICE
 
-#include "../Utility/IService.h"
+#include "IService.h"
 
 class GenerateService : public IService {
   std::string _outputFile;

@@ -1,10 +1,10 @@
 #include "GenerateService.h"
-#include "../Utility/TaskQueue.h"
+#include "../Tasks/Executor.h"
+#include "../Tasks/PrimeGenerator.h"
+#include "../Tasks/TaskQueue.h"
 #include <iostream>
 #include <random>
-#include "../Utility/Executor.h"
-#include "../Utility/TaskQueue.h"
-#include "../Tasks/PrimeGenerator.h"
+#include <thread>
 
 GenerateService::GenerateService() {}
 
@@ -22,16 +22,29 @@ int GenerateService::run(std::unordered_map<std::string, std::string> &args) {
 
   std::cout << "Starting key generation of length: "
             << fromArgs("length", "-1", args) << std::endl;
+
   std::default_random_engine engine(2137);
 
-  PrimeGenerator * _pr = new PrimeGenerator(2137);
+  size_t primeLength = 16;
+  PrimeGenerator generatorTasks[] = {{primeLength, 1}, {primeLength, 2}, {primeLength, 3}, {primeLength, 4},
+                                     {primeLength, 5}, {primeLength, 6}, {primeLength, 7}, {primeLength, 8}};
+
   TaskQueue queue;
 
-  Executor ex1(queue);
-  ex1.start();
+  std::vector<Executor> executors;
+  size_t threadCount = std::thread::hardware_concurrency();
+  threadCount  = 1;
+  std::cout << "thread count: " << threadCount << std::endl;
 
-  queue.push(_pr);
-  std::cin.get();
+  for (size_t i = 0; i < threadCount; ++i) {
+    executors.emplace_back(queue);
+  }
+
+  for (int i = 0; i < 8; ++i) {
+    queue.push(generatorTasks + i);
+  }
+
+  queue.terminate();
 
   return -1;
 }

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/kamil2/Projects/Studia/C++/RsaDemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamil2/Projects/Studia/C++/RsaDemo/build
+CMAKE_BINARY_DIR = /home/kamil2/Projects/Studia/C++/RsaDemo
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles /home/kamil2/Projects/Studia/C++/RsaDemo/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kamil2/Projects/Studia/C++/RsaDemo/CMakeFiles /home/kamil2/Projects/Studia/C++/RsaDemo//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kamil2/Projects/Studia/C++/RsaDemo/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

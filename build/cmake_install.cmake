@@ -1,4 +1,4 @@
-# Install script for directory: /home/kamil/Projects/Studia/RsaDemo
+# Install script for directory: /home/kamil2/Projects/Studia/C++/RsaDemo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kamil/Projects/Studia/RsaDemo/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kamil2/Projects/Studia/C++/RsaDemo/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
