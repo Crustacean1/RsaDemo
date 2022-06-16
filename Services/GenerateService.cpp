@@ -2,6 +2,9 @@
 #include "../Utility/TaskQueue.h"
 #include <iostream>
 #include <random>
+#include "../Utility/Executor.h"
+#include "../Utility/TaskQueue.h"
+#include "../Tasks/PrimeGenerator.h"
 
 GenerateService::GenerateService() {}
 
@@ -20,6 +23,15 @@ int GenerateService::run(std::unordered_map<std::string, std::string> &args) {
   std::cout << "Starting key generation of length: "
             << fromArgs("length", "-1", args) << std::endl;
   std::default_random_engine engine(2137);
+
+  PrimeGenerator * _pr = new PrimeGenerator(2137);
+  TaskQueue queue;
+
+  Executor ex1(queue);
+  ex1.start();
+
+  queue.push(_pr);
+  std::cin.get();
 
   return -1;
 }

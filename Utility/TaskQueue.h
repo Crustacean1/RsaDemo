@@ -4,10 +4,12 @@
 #include "Task.h"
 #include <mutex>
 #include <queue>
+#include <condition_variable>
 
 class TaskQueue {
   std::queue<Task *> _taskQueue;
   std::mutex _queueMutex;
+  std::condition_variable _cVar;
 
 public:
   TaskQueue();

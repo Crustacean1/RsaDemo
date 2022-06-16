@@ -9,7 +9,7 @@
 
 class PrimeGenerator : public Task{
   public:
-  PrimeGenerator(size_t primeLength, std::mutex & vecMutex, std::vector<KCrypt::Numeric> primes, );
+  PrimeGenerator(size_t primeLength);
   void run() override;
 };
 
