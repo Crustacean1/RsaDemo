@@ -15,3 +15,4 @@ IService::fromArgs(const std::string &key, const std::string &defaultValue,
   auto it = args.find(key);
   return (it == args.end()) ? defaultValue : it->second;
 }
+IService::~IService(){}

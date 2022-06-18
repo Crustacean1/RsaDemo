@@ -4,14 +4,19 @@
 #include "TaskQueue.h"
 #include <thread>
 
-class Executor {
-  bool _active;
-  std::thread _thread;
+class Logger;
 
-  static void run(TaskQueue &queue);
+class Executor {
+  Logger & _logger;
+
+  TaskQueue & _queue;
+  std::thread _thread;
+  std::mutex _runMutex;
+
+  void run();
 
 public:
-  Executor(TaskQueue &queue);
+  Executor();
 
   Executor(Executor &&ex);
   Executor(const Executor &) = delete;

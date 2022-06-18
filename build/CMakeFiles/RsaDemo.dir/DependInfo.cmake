@@ -13,8 +13,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/GenerateService.cpp" "CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/IService.cpp" "CMakeFiles/RsaDemo.dir/Services/IService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/IService.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.cpp" "CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o.d"
+  "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.cpp" "CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeGenerator.cpp" "CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o.d"
+  "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeSync.cpp" "CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.cpp" "CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o.d"
+  "/home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Logger.cpp" "CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Parser.cpp" "CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/main.cpp" "CMakeFiles/RsaDemo.dir/main.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/main.cpp.o.d"
   )

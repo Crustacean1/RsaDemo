@@ -1,7 +1,11 @@
 #include "GenerateService.h"
 #include "../Tasks/Executor.h"
+#include "../Tasks/Orchestrator.h"
 #include "../Tasks/PrimeGenerator.h"
+#include "../Tasks/PrimeSync.h"
 #include "../Tasks/TaskQueue.h"
+
+#include <chrono>
 #include <iostream>
 #include <random>
 #include <thread>
@@ -23,34 +27,54 @@ int GenerateService::run(std::unordered_map<std::string, std::string> &args) {
   std::cout << "Starting key generation of length: "
             << fromArgs("length", "-1", args) << std::endl;
 
-  std::default_random_engine engine(2137);
+  _keySize = std::atoi(fromArgs("length", "16", args).c_str());
 
-  size_t primeLength = 16;
-  PrimeGenerator generatorTasks[] = {{primeLength, 1}, {primeLength, 2}, {primeLength, 3}, {primeLength, 4},
-                                     {primeLength, 5}, {primeLength, 6}, {primeLength, 7}, {primeLength, 8}};
-
-  TaskQueue queue;
-
-  std::vector<Executor> executors;
-  size_t threadCount = std::thread::hardware_concurrency();
-  threadCount  = 1;
-  std::cout << "thread count: " << threadCount << std::endl;
-
-  for (size_t i = 0; i < threadCount; ++i) {
-    executors.emplace_back(queue);
-  }
-
-  for (int i = 0; i < 8; ++i) {
-    queue.push(generatorTasks + i);
-  }
-
-  queue.terminate();
+  generateKey();
 
   return -1;
+}
+
+void GenerateService::generateKey() {
+  size_t primeSize = _keySize / 2;
+
+  std::vector<PrimeGenerator *> primeGenerators;
+
+  size_t genTaskCount = Orchestrator::getInstance().getWorkerCount();
+
+  std::cout<<"Prime tasks = "<<genTaskCount<<std::endl;
+  PrimeSync sync(genTaskCount);
+
+  auto timeSinceEpoch = std::chrono::system_clock::now().time_since_epoch();
+  size_t timeInMillis =
+      std::chrono::duration_cast<std::chrono::milliseconds>(timeSinceEpoch)
+          .count();
+
+  for (size_t i = 0; i < genTaskCount; ++i) {
+    primeGenerators.push_back(
+        new PrimeGenerator(primeSize, timeInMillis + i, sync));
+  }
+
+  TaskQueue &queue = TaskQueue::getInstance();
+
+  for (int i = 0; i < genTaskCount; ++i) {
+    std::cout<<"Pushing to queue"<<std::endl;
+    queue.push(primeGenerators[i]);
+  }
+
+  sync.waitForSearchOver();
+  std::cout<<"Wait over"<<std::endl;
+
+  for (auto &generator : primeGenerators) {
+    delete generator;
+  }
 }
 
 GenerateService::ServiceArgumentDescription
 GenerateService::getArgumentDescription() {
   return {
-      {"length", "n"}, {"help", "h"}, {"output", "o"}, {"entropy-source", "e"}};
+      {"length", "n"}, {"help", "h"}, {"output", "o"}, {"entropy-source", "e"}, {"core-count","c"};
+}
+
+GenerateService::~GenerateService(){
+
 }

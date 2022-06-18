@@ -133,6 +133,9 @@ CMakeFiles/RsaDemo.dir/main.cpp.o: \
  /usr/include/c++/12.1.0/bits/stl_vector.h \
  /usr/include/c++/12.1.0/bits/stl_bvector.h \
  /usr/include/c++/12.1.0/bits/vector.tcc \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/../Utility/Singleton.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Task.h \
  /usr/include/c++/12.1.0/thread /usr/include/c++/12.1.0/stop_token \
@@ -187,20 +190,21 @@ CMakeFiles/RsaDemo.dir/main.cpp.o: \
  /usr/include/c++/12.1.0/bits/atomic_timed_wait.h \
  /usr/include/c++/12.1.0/bits/this_thread_sleep.h /usr/include/sys/time.h \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
- /usr/include/c++/12.1.0/mutex /usr/include/c++/12.1.0/bits/unique_lock.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Utility/Singleton.h \
+ /usr/include/c++/12.1.0/condition_variable \
+ /usr/include/c++/12.1.0/bits/unique_lock.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
+ /usr/include/c++/12.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/12.1.0/ext/concurrence.h /usr/include/c++/12.1.0/bit \
+ /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/mutex \
  /usr/include/c++/12.1.0/queue /usr/include/c++/12.1.0/deque \
  /usr/include/c++/12.1.0/bits/stl_deque.h \
  /usr/include/c++/12.1.0/bits/deque.tcc \
  /usr/include/c++/12.1.0/bits/stl_heap.h \
  /usr/include/c++/12.1.0/bits/stl_queue.h \
- /usr/include/c++/12.1.0/condition_variable \
- /usr/include/c++/12.1.0/bits/shared_ptr.h \
- /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
- /usr/include/c++/12.1.0/bits/allocated_ptr.h \
- /usr/include/c++/12.1.0/ext/concurrence.h /usr/include/c++/12.1.0/bit \
- /usr/include/c++/12.1.0/bits/align.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Logger.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Singleton.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Parser.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/../Services/IService.h \
  /usr/include/c++/12.1.0/functional \

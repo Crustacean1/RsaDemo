@@ -2,24 +2,28 @@
 #define TASK_QUEUE
 
 #include "Task.h"
+#include "Utility/Singleton.h"
+#include <condition_variable>
 #include <mutex>
 #include <queue>
-#include <condition_variable>
 
-class TaskQueue {
+class TaskQueue : public Singleton<TaskQueue> {
+  friend Singleton<TaskQueue>;
+
   bool _active;
 
   std::queue<Task *> _taskQueue;
   std::mutex _queueMutex;
   std::condition_variable _cVar;
 
-public:
   TaskQueue();
 
+public:
   TaskQueue(const TaskQueue &) = delete;
   TaskQueue &operator=(const TaskQueue &) = delete;
 
   void push(Task *task);
+
   Task *pop();
 
   void terminate();

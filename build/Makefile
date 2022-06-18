@@ -249,6 +249,30 @@ Tasks/Executor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.s
 .PHONY : Tasks/Executor.cpp.s
 
+Tasks/Orchestrator.o: Tasks/Orchestrator.cpp.o
+.PHONY : Tasks/Orchestrator.o
+
+# target to build an object file
+Tasks/Orchestrator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o
+.PHONY : Tasks/Orchestrator.cpp.o
+
+Tasks/Orchestrator.i: Tasks/Orchestrator.cpp.i
+.PHONY : Tasks/Orchestrator.i
+
+# target to preprocess a source file
+Tasks/Orchestrator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.i
+.PHONY : Tasks/Orchestrator.cpp.i
+
+Tasks/Orchestrator.s: Tasks/Orchestrator.cpp.s
+.PHONY : Tasks/Orchestrator.s
+
+# target to generate assembly for a file
+Tasks/Orchestrator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.s
+.PHONY : Tasks/Orchestrator.cpp.s
+
 Tasks/PrimeGenerator.o: Tasks/PrimeGenerator.cpp.o
 .PHONY : Tasks/PrimeGenerator.o
 
@@ -273,6 +297,30 @@ Tasks/PrimeGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.s
 .PHONY : Tasks/PrimeGenerator.cpp.s
 
+Tasks/PrimeSync.o: Tasks/PrimeSync.cpp.o
+.PHONY : Tasks/PrimeSync.o
+
+# target to build an object file
+Tasks/PrimeSync.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o
+.PHONY : Tasks/PrimeSync.cpp.o
+
+Tasks/PrimeSync.i: Tasks/PrimeSync.cpp.i
+.PHONY : Tasks/PrimeSync.i
+
+# target to preprocess a source file
+Tasks/PrimeSync.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.i
+.PHONY : Tasks/PrimeSync.cpp.i
+
+Tasks/PrimeSync.s: Tasks/PrimeSync.cpp.s
+.PHONY : Tasks/PrimeSync.s
+
+# target to generate assembly for a file
+Tasks/PrimeSync.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.s
+.PHONY : Tasks/PrimeSync.cpp.s
+
 Tasks/TaskQueue.o: Tasks/TaskQueue.cpp.o
 .PHONY : Tasks/TaskQueue.o
 
@@ -296,6 +344,30 @@ Tasks/TaskQueue.s: Tasks/TaskQueue.cpp.s
 Tasks/TaskQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.s
 .PHONY : Tasks/TaskQueue.cpp.s
+
+Utility/Logger.o: Utility/Logger.cpp.o
+.PHONY : Utility/Logger.o
+
+# target to build an object file
+Utility/Logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o
+.PHONY : Utility/Logger.cpp.o
+
+Utility/Logger.i: Utility/Logger.cpp.i
+.PHONY : Utility/Logger.i
+
+# target to preprocess a source file
+Utility/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.i
+.PHONY : Utility/Logger.cpp.i
+
+Utility/Logger.s: Utility/Logger.cpp.s
+.PHONY : Utility/Logger.s
+
+# target to generate assembly for a file
+Utility/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.s
+.PHONY : Utility/Logger.cpp.s
 
 Utility/Parser.o: Utility/Parser.cpp.o
 .PHONY : Utility/Parser.o
@@ -369,12 +441,21 @@ help:
 	@echo "... Tasks/Executor.o"
 	@echo "... Tasks/Executor.i"
 	@echo "... Tasks/Executor.s"
+	@echo "... Tasks/Orchestrator.o"
+	@echo "... Tasks/Orchestrator.i"
+	@echo "... Tasks/Orchestrator.s"
 	@echo "... Tasks/PrimeGenerator.o"
 	@echo "... Tasks/PrimeGenerator.i"
 	@echo "... Tasks/PrimeGenerator.s"
+	@echo "... Tasks/PrimeSync.o"
+	@echo "... Tasks/PrimeSync.i"
+	@echo "... Tasks/PrimeSync.s"
 	@echo "... Tasks/TaskQueue.o"
 	@echo "... Tasks/TaskQueue.i"
 	@echo "... Tasks/TaskQueue.s"
+	@echo "... Utility/Logger.o"
+	@echo "... Utility/Logger.i"
+	@echo "... Utility/Logger.s"
 	@echo "... Utility/Parser.o"
 	@echo "... Utility/Parser.i"
 	@echo "... Utility/Parser.s"

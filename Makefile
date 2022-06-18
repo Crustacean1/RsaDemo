@@ -273,6 +273,30 @@ Tasks/PrimeGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.s
 .PHONY : Tasks/PrimeGenerator.cpp.s
 
+Tasks/PrimeSync.o: Tasks/PrimeSync.cpp.o
+.PHONY : Tasks/PrimeSync.o
+
+# target to build an object file
+Tasks/PrimeSync.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o
+.PHONY : Tasks/PrimeSync.cpp.o
+
+Tasks/PrimeSync.i: Tasks/PrimeSync.cpp.i
+.PHONY : Tasks/PrimeSync.i
+
+# target to preprocess a source file
+Tasks/PrimeSync.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.i
+.PHONY : Tasks/PrimeSync.cpp.i
+
+Tasks/PrimeSync.s: Tasks/PrimeSync.cpp.s
+.PHONY : Tasks/PrimeSync.s
+
+# target to generate assembly for a file
+Tasks/PrimeSync.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.s
+.PHONY : Tasks/PrimeSync.cpp.s
+
 Tasks/TaskQueue.o: Tasks/TaskQueue.cpp.o
 .PHONY : Tasks/TaskQueue.o
 
@@ -372,6 +396,9 @@ help:
 	@echo "... Tasks/PrimeGenerator.o"
 	@echo "... Tasks/PrimeGenerator.i"
 	@echo "... Tasks/PrimeGenerator.s"
+	@echo "... Tasks/PrimeSync.o"
+	@echo "... Tasks/PrimeSync.i"
+	@echo "... Tasks/PrimeSync.s"
 	@echo "... Tasks/TaskQueue.o"
 	@echo "... Tasks/TaskQueue.i"
 	@echo "... Tasks/TaskQueue.s"

@@ -24,7 +24,11 @@ void Parser::parse(int argc, char **argv) {
   }
 }
 
-int Parser::run() { return _currentService->run(_serviceArgs); }
+int Parser::run() {
+  int result = _currentService->run(_serviceArgs);
+  delete _currentService;
+  return result;
+}
 
 void Parser::parseLiteral(int &pos, int size, char **args) {
   if (!isOption(args[pos])) {
@@ -41,7 +45,7 @@ void Parser::parseLiteral(int &pos, int size, char **args) {
   }
   if (pos < size) {
     _currentOption = getOptionFullName(std::string(args[pos++]));
-    _serviceArgs[_currentOption]="";
+    _serviceArgs[_currentOption] = "";
   }
 }
 

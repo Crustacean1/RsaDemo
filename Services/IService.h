@@ -18,6 +18,7 @@ public:
   virtual ServiceArgumentDescription getArgumentDescription() = 0;
   virtual std::string help() = 0;
   virtual int run(std::unordered_map<std::string, std::string> &args);
+  virtual ~IService();
 };
 
 #endif /*ISERVICE*/

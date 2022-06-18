@@ -1,6 +1,8 @@
 #include "TaskQueue.h"
+#include <iostream>
 
-TaskQueue::TaskQueue() : _active(true) {}
+TaskQueue::TaskQueue() : _active(true) {
+}
 
 void TaskQueue::push(Task *task) {
   std::unique_lock<std::mutex> lock(_queueMutex);
@@ -16,7 +18,12 @@ Task *TaskQueue::pop() {
     if (!_active) {
       return nullptr;
     }
+
     _cVar.wait(lock, [this]() { return (_taskQueue.size() != 0 || !_active); });
+
+    if (!_active) {
+      return nullptr;
+    }
   }
 
   auto front = _taskQueue.front();

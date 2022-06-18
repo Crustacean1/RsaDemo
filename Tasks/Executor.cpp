@@ -1,21 +1,23 @@
 #include "Executor.h"
+#include "../Utility/Logger.h"
 #include <iostream>
 
-Executor::Executor(TaskQueue &queue)
-    : _active(true), _thread(Executor::run, std::ref(queue)) {
-  std::cout << "Constructing thread: " << _thread.get_id() << std::endl;
+Executor::Executor()
+    : _thread(&Executor::run, this), _queue(TaskQueue::getInstance()),
+      _logger(Logger::getInstance()) {
+
+  _logger.debug("Constructing thread", _thread.get_id());
 }
 
 Executor::Executor(Executor &&exec)
-    : _active(true), _thread(std::move(exec._thread)) {
-  exec._active = false;
-}
+    : _thread(std::move(exec._thread)), _queue(exec._queue),
+      _logger(exec._logger) {}
 
-void Executor::run(TaskQueue &queue) {
+void Executor::run() {
   auto threadId = std::this_thread::get_id();
 
   for (;;) {
-    auto *task = queue.pop();
+    auto *task = _queue.pop();
     if (task == nullptr) {
       return;
     }
@@ -24,10 +26,10 @@ void Executor::run(TaskQueue &queue) {
 }
 
 Executor::~Executor() {
-  if (_active) {
+  _logger.debug("Destroying thread", _thread.get_id());
+
+  if (_thread.joinable()) {
     auto threadId = _thread.get_id();
-    std::cout << "Ending thread: " << threadId << std::endl;
     _thread.join();
-    std::cout << "Ended thread: " << threadId << std::endl;
   }
 }
