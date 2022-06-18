@@ -133,9 +133,8 @@ CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o: \
  /usr/include/c++/12.1.0/bits/stl_vector.h \
  /usr/include/c++/12.1.0/bits/stl_bvector.h \
  /usr/include/c++/12.1.0/bits/vector.tcc \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/Executor.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/TaskQueue.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/Task.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/PrimeGenerator.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/../Tasks/Task.h \
  /usr/include/c++/12.1.0/thread /usr/include/c++/12.1.0/stop_token \
  /usr/include/c++/12.1.0/atomic \
  /usr/include/c++/12.1.0/bits/atomic_base.h \
@@ -188,24 +187,6 @@ CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o: \
  /usr/include/c++/12.1.0/bits/atomic_timed_wait.h \
  /usr/include/c++/12.1.0/bits/this_thread_sleep.h /usr/include/sys/time.h \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/./Utility/Singleton.h \
- /usr/include/c++/12.1.0/condition_variable \
- /usr/include/c++/12.1.0/bits/unique_lock.h \
- /usr/include/c++/12.1.0/bits/shared_ptr.h \
- /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
- /usr/include/c++/12.1.0/bits/allocated_ptr.h \
- /usr/include/c++/12.1.0/ext/concurrence.h /usr/include/c++/12.1.0/bit \
- /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/mutex \
- /usr/include/c++/12.1.0/queue /usr/include/c++/12.1.0/deque \
- /usr/include/c++/12.1.0/bits/stl_deque.h \
- /usr/include/c++/12.1.0/bits/deque.tcc \
- /usr/include/c++/12.1.0/bits/stl_heap.h \
- /usr/include/c++/12.1.0/bits/stl_queue.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/Orchestrator.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/../Utility/Singleton.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/Executor.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/PrimeGenerator.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/../Tasks/Task.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Numeric.h \
  /usr/include/c++/12.1.0/cstddef /usr/include/c++/12.1.0/cstring \
  /usr/include/string.h /usr/include/strings.h \
@@ -248,16 +229,49 @@ CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o: \
  /usr/include/c++/12.1.0/bits/uniform_int_dist.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/opt_random.h \
  /usr/include/c++/12.1.0/bits/random.tcc /usr/include/c++/12.1.0/numeric \
- /usr/include/c++/12.1.0/bits/stl_numeric.h \
+ /usr/include/c++/12.1.0/bits/stl_numeric.h /usr/include/c++/12.1.0/bit \
  /usr/include/c++/12.1.0/pstl/glue_numeric_defs.h \
  /usr/include/c++/12.1.0/pstl/execution_defs.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/MulEngine.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/BufferInstance.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/Buffer.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/Buffer.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/BufferView.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/PrimeSync.h \
  /usr/include/c++/12.1.0/latch \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/TaskQueue.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/Task.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Utility/Singleton.h \
+ /usr/include/c++/12.1.0/condition_variable \
+ /usr/include/c++/12.1.0/bits/unique_lock.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
+ /usr/include/c++/12.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/12.1.0/ext/concurrence.h \
+ /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/mutex \
+ /usr/include/c++/12.1.0/queue /usr/include/c++/12.1.0/deque \
+ /usr/include/c++/12.1.0/bits/stl_deque.h \
+ /usr/include/c++/12.1.0/bits/deque.tcc \
+ /usr/include/c++/12.1.0/bits/stl_heap.h \
+ /usr/include/c++/12.1.0/bits/stl_queue.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Utility/Logger.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Utility/Singleton.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Utility/RsaKey.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/RsaEngine.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./include/ArithmInjector.h \
+ /usr/include/c++/12.1.0/algorithm \
+ /usr/include/c++/12.1.0/bits/stl_algo.h \
+ /usr/include/c++/12.1.0/bits/algorithmfwd.h \
+ /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
+ /usr/include/c++/12.1.0/bits/ranges_algo.h \
+ /usr/include/c++/12.1.0/bits/ranges_algobase.h \
+ /usr/include/c++/12.1.0/bits/ranges_util.h \
+ /usr/include/c++/12.1.0/pstl/glue_algorithm_defs.h \
  /usr/include/c++/12.1.0/chrono /usr/include/c++/12.1.0/sstream \
- /usr/include/c++/12.1.0/bits/sstream.tcc
+ /usr/include/c++/12.1.0/bits/sstream.tcc /usr/include/c++/12.1.0/fstream \
+ /usr/include/c++/12.1.0/bits/codecvt.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/12.1.0/bits/fstream.tcc /usr/include/c++/12.1.0/ranges \
+ /usr/include/c++/12.1.0/iterator \
+ /usr/include/c++/12.1.0/bits/stream_iterator.h \
+ /usr/include/c++/12.1.0/optional /usr/include/c++/12.1.0/span \
+ /usr/include/c++/12.1.0/array

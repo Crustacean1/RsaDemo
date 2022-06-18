@@ -6,6 +6,7 @@
 class Task {
 public:
   virtual void run(std::thread::id id) = 0;
+  virtual ~Task(){};
 };
 
 #endif /*TASK*/

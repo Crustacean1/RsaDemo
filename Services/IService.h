@@ -12,7 +12,7 @@ protected:
                        std::unordered_map<std::string, std::string> &args);
 
 public:
-  using ArgumentDescription = std::tuple<std::string, std::string>;
+  using ArgumentDescription = std::tuple<std::string, std::string, bool>;
   using ServiceArgumentDescription = std::vector<ArgumentDescription>;
 
   virtual ServiceArgumentDescription getArgumentDescription() = 0;

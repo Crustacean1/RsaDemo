@@ -31,52 +31,40 @@ int Parser::run() {
 }
 
 void Parser::parseLiteral(int &pos, int size, char **args) {
-  if (!isOption(args[pos])) {
-    if (_currentOption == "") {
-      throw std::runtime_error(std::string("Unrecognized option: ") +
-                               std::string(args[pos]));
-    }
-    _serviceArgs[_currentOption] = std::string(args[pos]);
-    if (++pos < size && !isOption(args[pos])) {
-      throw std::runtime_error(
-          std::string("Multiple values for one option not allowed: ") +
-          _currentOption);
-    }
-  }
-  if (pos < size) {
-    _currentOption = getOptionFullName(std::string(args[pos++]));
-    _serviceArgs[_currentOption] = "";
+
+  auto argument = getArgument(std::string(args[pos++]));
+
+  if (isOption(argument) && pos < size) {
+    _serviceArgs[std::get<0>(argument)] = std::string(args[pos++]);
+  } else if (isFlag(argument)) {
+    _serviceArgs[std::get<0>(argument)] = std::string("");
   }
 }
 
-bool Parser::isOption(const std::string &str) {
-  if (str.size() == 0) {
-    return false;
-  }
+IService::ArgumentDescription Parser::getArgument(const std::string &cliParam) {
   const auto &vec = _currentService->getArgumentDescription();
-  auto it = std::find_if(
-      vec.begin(), vec.end(),
-      [&str](const std::tuple<std::string, std::string> &optionPair) {
-        return (str.size() > 2 && str[0] == '-' && str[1] == '-' &&
-                std::get<0>(optionPair) == str.substr(2)) ||
-               (str.size() > 1 && str[0] == '-' &&
-                std::get<1>(optionPair) == str.substr(1));
-      });
-  return it != vec.end();
-}
+  auto isLongOrShort = [&cliParam](
+                           const IService::ArgumentDescription &optionPair) {
+    bool isLong =
+        (cliParam.size() > 2 && std::get<0>(optionPair) == cliParam.substr(2));
+    bool isShort =
+        (cliParam.size() > 1 && std::get<1>(optionPair) == cliParam.substr(1));
+    return isLong | isShort;
+  };
 
-std::string Parser::getOptionFullName(const std::string &str) {
-
-  const auto &vec = _currentService->getArgumentDescription();
-  auto it = std::find_if(
-      vec.begin(), vec.end(),
-      [&str](const std::tuple<std::string, std::string> &optionPair) {
-        return std::get<0>(optionPair) == str.substr(2) ||
-               (str.size() > 1 && std::get<1>(optionPair) == str.substr(1));
-      });
+  auto it = std::find_if(vec.begin(), vec.end(), isLongOrShort);
   if (it == vec.end()) {
-    throw std::runtime_error(std::string("In: Parser::getOptionFullName: ") +
-                             "couldn't retrieve option");
+    throw std::runtime_error(
+        std::string("In Parser::getArgument: unrecognized option: ") +
+        cliParam);
   }
-  return std::get<0>(*it);
+  return *it;
+}
+
+bool Parser::isOption(const IService::ArgumentDescription &arg) {
+  return !std::get<2>(arg);
+}
+
+bool Parser::isFlag(const IService::ArgumentDescription &arg) {
+  return std::get<2>(arg);
 }

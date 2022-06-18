@@ -23,13 +23,15 @@ class PrimeGenerator : public Task {
 
 public:
   PrimeGenerator(size_t primeLength, size_t seed, PrimeSync &sync);
-  PrimeGenerator(const PrimeGenerator&) = delete;
-  PrimeGenerator operator=(const PrimeGenerator&) = delete;
+  PrimeGenerator(const PrimeGenerator &) = delete;
+  PrimeGenerator operator=(const PrimeGenerator &) = delete;
 
   void run(std::thread::id id) override;
-  bool isDone();
+  bool isDone()const;
 
   KCrypt::Numeric candidate;
+
+  ~PrimeGenerator();
 };
 
 #endif /*PRIME_GENERATOR*/

@@ -129,30 +129,6 @@ RsaDemo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/build
 .PHONY : RsaDemo/fast
 
-Services/DecodeService.o: Services/DecodeService.cpp.o
-.PHONY : Services/DecodeService.o
-
-# target to build an object file
-Services/DecodeService.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o
-.PHONY : Services/DecodeService.cpp.o
-
-Services/DecodeService.i: Services/DecodeService.cpp.i
-.PHONY : Services/DecodeService.i
-
-# target to preprocess a source file
-Services/DecodeService.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.i
-.PHONY : Services/DecodeService.cpp.i
-
-Services/DecodeService.s: Services/DecodeService.cpp.s
-.PHONY : Services/DecodeService.s
-
-# target to generate assembly for a file
-Services/DecodeService.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.s
-.PHONY : Services/DecodeService.cpp.s
-
 Services/EncodeService.o: Services/EncodeService.cpp.o
 .PHONY : Services/EncodeService.o
 
@@ -393,6 +369,30 @@ Utility/Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.s
 .PHONY : Utility/Parser.cpp.s
 
+Utility/RsaKey.o: Utility/RsaKey.cpp.o
+.PHONY : Utility/RsaKey.o
+
+# target to build an object file
+Utility/RsaKey.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o
+.PHONY : Utility/RsaKey.cpp.o
+
+Utility/RsaKey.i: Utility/RsaKey.cpp.i
+.PHONY : Utility/RsaKey.i
+
+# target to preprocess a source file
+Utility/RsaKey.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.i
+.PHONY : Utility/RsaKey.cpp.i
+
+Utility/RsaKey.s: Utility/RsaKey.cpp.s
+.PHONY : Utility/RsaKey.s
+
+# target to generate assembly for a file
+Utility/RsaKey.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.s
+.PHONY : Utility/RsaKey.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -426,9 +426,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RsaDemo"
-	@echo "... Services/DecodeService.o"
-	@echo "... Services/DecodeService.i"
-	@echo "... Services/DecodeService.s"
 	@echo "... Services/EncodeService.o"
 	@echo "... Services/EncodeService.i"
 	@echo "... Services/EncodeService.s"
@@ -459,6 +456,9 @@ help:
 	@echo "... Utility/Parser.o"
 	@echo "... Utility/Parser.i"
 	@echo "... Utility/Parser.s"
+	@echo "... Utility/RsaKey.o"
+	@echo "... Utility/RsaKey.i"
+	@echo "... Utility/RsaKey.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

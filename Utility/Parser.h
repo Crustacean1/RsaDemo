@@ -13,16 +13,17 @@ class Parser {
   std::unordered_map<std::string, GenericServiceFactory> _serviceFactories;
 
   std::unordered_map<std::string, std::string> _serviceArgs;
-  std::string _currentOption;
 
   IService *instantiateService(const std::string &serviceName);
 
   IService *_currentService;
 
-  bool isOption(const std::string &str);
-  std::string getOptionFullName(const std::string &str);
+  bool isOption(const IService::ArgumentDescription &desc);
+  bool isFlag(const IService::ArgumentDescription &desc);
 
   void parseLiteral(int &pos, int size, char **args);
+
+  IService::ArgumentDescription getArgument(const std::string &cliParam);
 
 public:
   template <typename ServiceType> void addService(const std::string &name);

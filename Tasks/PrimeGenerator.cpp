@@ -11,7 +11,7 @@ PrimeGenerator::PrimeGenerator(size_t primeLength, size_t seed, PrimeSync &sync)
     : _engine(seed), _done(false), _logger(Logger::getInstance()),
       _primeLength(primeLength), _sync(sync), candidate(primeLength) {}
 
-bool PrimeGenerator::isDone() { return _done; }
+bool PrimeGenerator::isDone() const { return _done; }
 
 void PrimeGenerator::initializeCandidate() {
   auto &io = KCrypt::ArithmInjector::getInstance().getIo();
@@ -65,3 +65,5 @@ void PrimeGenerator::run(std::thread::id id) {
   _logger.debug(id, "finished searching");
   _sync.endSearch();
 }
+
+PrimeGenerator::~PrimeGenerator() {}

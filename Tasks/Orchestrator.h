@@ -5,8 +5,11 @@
 #include "Executor.h"
 #include "TaskQueue.h"
 
+class Logger;
+
 class Orchestrator : public Singleton<Orchestrator> {
   friend Singleton<Orchestrator>;
+  Logger & _logger;
 
   volatile const size_t _executorCount;
   Executor *_executors;
