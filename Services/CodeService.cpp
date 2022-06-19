@@ -43,8 +43,6 @@ std::tuple<unsigned char *, size_t> CodeService::load(std::istream &stream) {
   size = stream.tellg();
   stream.seekg(0, stream.beg);
 
-  _logger.debug("CodeService::load", "file size", size);
-
   unsigned char *data = new unsigned char[size];
 
   stream.read(reinterpret_cast<char *>(data), size);
@@ -54,7 +52,7 @@ std::tuple<unsigned char *, size_t> CodeService::load(std::istream &stream) {
 void CodeService::encode(unsigned char *data, size_t dataSize, RsaKey &key) {
   auto &queue = TaskQueue::getInstance();
 
-  std::vector<EncodeTask*> tasks;
+  std::vector<EncodeTask *> tasks;
 
   size_t blockSize = key.size() * sizeof(KCrypt::Buffer::BaseInt);
   size_t blockCount = dataSize / blockSize;
@@ -68,7 +66,6 @@ void CodeService::encode(unsigned char *data, size_t dataSize, RsaKey &key) {
   }
 
   sync.waitForAllTasks();
-  _logger.debug("Encoding finished");
 
   for (auto &task : tasks) {
     delete task;

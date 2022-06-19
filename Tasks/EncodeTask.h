@@ -9,6 +9,10 @@ class Logger;
 class EncodeSync;
 class ExecutionContext;
 
+namespace KCrypt {
+class ArithmInjector;
+}
+
 class EncodeTask : public Task {
   RsaKey &_key;
   Logger &_logger;

@@ -13,7 +13,6 @@ void EncodeTask::run(ExecutionContext &context) {
   auto &rsa = KCrypt::ArithmInjector::getInstance().getRsa();
 
   if (!context.isRsaKeySet) {
-    auto lock = _sync.lockKey();
     rsa.setKey(_key.getExponent().getBuffer(), _key.getModulus().getBuffer());
     context.isRsaKeySet = true;
   }

@@ -14,7 +14,6 @@ Orchestrator::Orchestrator()
 void Orchestrator::initialize() {
   for (size_t i = 0; i < _executorCount; ++i) {
     ExecutionContext context{i};
-    _logger.debug("creating thread with context:", context.threadNo);
     _executors.emplace_back(context);
   }
 }

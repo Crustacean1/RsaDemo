@@ -8,7 +8,6 @@
 #include <fstream>
 #include <latch>
 #include <random>
-#include <stdexcept>
 
 EncodeService::EncodeService() : CodeService() {}
 
