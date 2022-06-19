@@ -1,23 +1,23 @@
 #ifndef EXECUTOR
 #define EXECUTOR
 
+#include "ExecutionContext.h"
 #include "TaskQueue.h"
 #include <thread>
+
+class Orchestrator;
 
 class Logger;
 
 class Executor {
-  Logger & _logger;
+  friend Orchestrator;
 
-  TaskQueue & _queue;
   std::thread _thread;
-  std::mutex _runMutex;
 
-  void run();
+  static void run(TaskQueue &_queue, ExecutionContext context);
 
 public:
-  Executor();
-
+  Executor(ExecutionContext context);
   Executor(Executor &&ex);
   Executor(const Executor &) = delete;
   Executor &operator=(Executor &&e) = delete;

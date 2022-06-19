@@ -137,6 +137,8 @@ CMakeFiles/RsaDemo.dir/main.cpp.o: \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/../Utility/Singleton.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/ExecutionContext.h \
+ /usr/include/c++/12.1.0/cstddef \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Task.h \
  /usr/include/c++/12.1.0/thread /usr/include/c++/12.1.0/stop_token \

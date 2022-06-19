@@ -2,33 +2,28 @@
 #include "../Utility/Logger.h"
 #include <iostream>
 
-Executor::Executor()
-    : _thread(&Executor::run, this), _queue(TaskQueue::getInstance()),
-      _logger(Logger::getInstance()) {
+Executor::Executor(ExecutionContext context)
+    : _thread(&Executor::run, std::ref(TaskQueue::getInstance()), context) {}
 
-  _logger.debug("Constructing thread", _thread.get_id());
-}
+Executor::Executor(Executor &&exec) : _thread(std::move(exec._thread)) {}
 
-Executor::Executor(Executor &&exec)
-    : _thread(std::move(exec._thread)), _queue(exec._queue),
-      _logger(exec._logger) {}
-
-void Executor::run() {
-  auto threadId = std::this_thread::get_id();
+void Executor::run(TaskQueue &queue, ExecutionContext context) {
+  auto &logger = Logger::getInstance();
 
   for (;;) {
-    auto *task = _queue.pop();
+    auto *task = queue.pop();
     if (task == nullptr) {
       return;
     }
-    task->run(threadId);
+    task->run(context);
   }
 }
 
 Executor::~Executor() {
-  _logger.debug("Destroying thread", _thread.get_id());
 
   if (_thread.joinable()) {
+    auto &logger = Logger::getInstance();
+    logger.debug("Destroying thread", _thread.get_id());
     auto threadId = _thread.get_id();
     _thread.join();
   }

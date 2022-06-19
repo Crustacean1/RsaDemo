@@ -129,6 +129,30 @@ RsaDemo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/build
 .PHONY : RsaDemo/fast
 
+Services/DecodeService.o: Services/DecodeService.cpp.o
+.PHONY : Services/DecodeService.o
+
+# target to build an object file
+Services/DecodeService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o
+.PHONY : Services/DecodeService.cpp.o
+
+Services/DecodeService.i: Services/DecodeService.cpp.i
+.PHONY : Services/DecodeService.i
+
+# target to preprocess a source file
+Services/DecodeService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.i
+.PHONY : Services/DecodeService.cpp.i
+
+Services/DecodeService.s: Services/DecodeService.cpp.s
+.PHONY : Services/DecodeService.s
+
+# target to generate assembly for a file
+Services/DecodeService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.s
+.PHONY : Services/DecodeService.cpp.s
+
 Services/EncodeService.o: Services/EncodeService.cpp.o
 .PHONY : Services/EncodeService.o
 
@@ -200,6 +224,54 @@ Services/IService.s: Services/IService.cpp.s
 Services/IService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Services/IService.cpp.s
 .PHONY : Services/IService.cpp.s
+
+Tasks/EncodeSync.o: Tasks/EncodeSync.cpp.o
+.PHONY : Tasks/EncodeSync.o
+
+# target to build an object file
+Tasks/EncodeSync.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o
+.PHONY : Tasks/EncodeSync.cpp.o
+
+Tasks/EncodeSync.i: Tasks/EncodeSync.cpp.i
+.PHONY : Tasks/EncodeSync.i
+
+# target to preprocess a source file
+Tasks/EncodeSync.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.i
+.PHONY : Tasks/EncodeSync.cpp.i
+
+Tasks/EncodeSync.s: Tasks/EncodeSync.cpp.s
+.PHONY : Tasks/EncodeSync.s
+
+# target to generate assembly for a file
+Tasks/EncodeSync.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.s
+.PHONY : Tasks/EncodeSync.cpp.s
+
+Tasks/EncodeTask.o: Tasks/EncodeTask.cpp.o
+.PHONY : Tasks/EncodeTask.o
+
+# target to build an object file
+Tasks/EncodeTask.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o
+.PHONY : Tasks/EncodeTask.cpp.o
+
+Tasks/EncodeTask.i: Tasks/EncodeTask.cpp.i
+.PHONY : Tasks/EncodeTask.i
+
+# target to preprocess a source file
+Tasks/EncodeTask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.i
+.PHONY : Tasks/EncodeTask.cpp.i
+
+Tasks/EncodeTask.s: Tasks/EncodeTask.cpp.s
+.PHONY : Tasks/EncodeTask.s
+
+# target to generate assembly for a file
+Tasks/EncodeTask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RsaDemo.dir/build.make CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.s
+.PHONY : Tasks/EncodeTask.cpp.s
 
 Tasks/Executor.o: Tasks/Executor.cpp.o
 .PHONY : Tasks/Executor.o
@@ -426,6 +498,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RsaDemo"
+	@echo "... Services/DecodeService.o"
+	@echo "... Services/DecodeService.i"
+	@echo "... Services/DecodeService.s"
 	@echo "... Services/EncodeService.o"
 	@echo "... Services/EncodeService.i"
 	@echo "... Services/EncodeService.s"
@@ -435,6 +510,12 @@ help:
 	@echo "... Services/IService.o"
 	@echo "... Services/IService.i"
 	@echo "... Services/IService.s"
+	@echo "... Tasks/EncodeSync.o"
+	@echo "... Tasks/EncodeSync.i"
+	@echo "... Tasks/EncodeSync.s"
+	@echo "... Tasks/EncodeTask.o"
+	@echo "... Tasks/EncodeTask.i"
+	@echo "... Tasks/EncodeTask.s"
 	@echo "... Tasks/Executor.o"
 	@echo "... Tasks/Executor.i"
 	@echo "... Tasks/Executor.s"

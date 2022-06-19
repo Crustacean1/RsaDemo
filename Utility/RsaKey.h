@@ -8,8 +8,8 @@ class RsaKey {
   KCrypt::Numeric _exponent;
   KCrypt::Numeric _modulus;
 
-  static constexpr const char * _keyStart = "-----BEGIN-KEY-----";
-  static constexpr const char * _keyEnd = "-----END-KEY-----";
+  static constexpr const char *_keyStart = "-----BEGIN-KEY-----";
+  static constexpr const char *_keyEnd = "-----END-KEY-----";
 
 public:
   RsaKey();
@@ -20,8 +20,8 @@ public:
 
   size_t size();
 
-  const KCrypt::Numeric &getExponent();
-  const KCrypt::Numeric &getModulus();
+  KCrypt::Numeric &getExponent();
+  KCrypt::Numeric &getModulus();
 };
 
 #endif /*RSA_KEY*/

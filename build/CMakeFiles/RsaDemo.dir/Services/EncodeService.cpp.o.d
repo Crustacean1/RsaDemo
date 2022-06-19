@@ -133,22 +133,42 @@ CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o: \
  /usr/include/c++/12.1.0/bits/stl_vector.h \
  /usr/include/c++/12.1.0/bits/stl_bvector.h \
  /usr/include/c++/12.1.0/bits/vector.tcc \
- /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Utility/RsaKey.h \
- /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Numeric.h \
- /usr/include/c++/12.1.0/cstddef /usr/include/c++/12.1.0/cstring \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/c++/12.1.0/iostream /usr/include/c++/12.1.0/ostream \
- /usr/include/c++/12.1.0/ios /usr/include/c++/12.1.0/exception \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Tasks/EncodeSync.h \
+ /usr/include/c++/12.1.0/cstddef /usr/include/c++/12.1.0/latch \
+ /usr/include/c++/12.1.0/bits/atomic_base.h \
+ /usr/include/c++/12.1.0/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/12.1.0/bits/atomic_wait.h \
+ /usr/include/c++/12.1.0/climits \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
+ /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
+ /usr/include/c++/12.1.0/bits/std_mutex.h \
+ /usr/include/c++/12.1.0/system_error \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/error_constants.h \
+ /usr/include/c++/12.1.0/stdexcept /usr/include/c++/12.1.0/exception \
  /usr/include/c++/12.1.0/bits/exception_ptr.h \
  /usr/include/c++/12.1.0/bits/cxxabi_init_exception.h \
  /usr/include/c++/12.1.0/typeinfo \
  /usr/include/c++/12.1.0/bits/nested_exception.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Tasks/EncodeTask.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Tasks/Task.h \
+ /usr/include/c++/12.1.0/thread /usr/include/c++/12.1.0/stop_token \
+ /usr/include/c++/12.1.0/atomic /usr/include/c++/12.1.0/bits/std_thread.h \
+ /usr/include/c++/12.1.0/bits/unique_ptr.h \
+ /usr/include/c++/12.1.0/ostream /usr/include/c++/12.1.0/ios \
  /usr/include/c++/12.1.0/bits/ios_base.h \
  /usr/include/c++/12.1.0/bits/locale_classes.h \
  /usr/include/c++/12.1.0/bits/locale_classes.tcc \
- /usr/include/c++/12.1.0/system_error \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/include/c++/12.1.0/stdexcept /usr/include/c++/12.1.0/streambuf \
+ /usr/include/c++/12.1.0/streambuf \
  /usr/include/c++/12.1.0/bits/streambuf.tcc \
  /usr/include/c++/12.1.0/bits/basic_ios.h \
  /usr/include/c++/12.1.0/bits/locale_facets.h \
@@ -159,8 +179,19 @@ CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o: \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/12.1.0/bits/locale_facets.tcc \
  /usr/include/c++/12.1.0/bits/basic_ios.tcc \
- /usr/include/c++/12.1.0/bits/ostream.tcc /usr/include/c++/12.1.0/istream \
- /usr/include/c++/12.1.0/bits/istream.tcc \
+ /usr/include/c++/12.1.0/bits/ostream.tcc \
+ /usr/include/c++/12.1.0/semaphore \
+ /usr/include/c++/12.1.0/bits/semaphore_base.h \
+ /usr/include/c++/12.1.0/bits/chrono.h /usr/include/c++/12.1.0/ratio \
+ /usr/include/c++/12.1.0/limits /usr/include/c++/12.1.0/ctime \
+ /usr/include/c++/12.1.0/bits/parse_numbers.h \
+ /usr/include/c++/12.1.0/bits/atomic_timed_wait.h \
+ /usr/include/c++/12.1.0/bits/this_thread_sleep.h /usr/include/sys/time.h \
+ /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Numeric.h \
+ /usr/include/c++/12.1.0/cstring /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/12.1.0/iostream \
+ /usr/include/c++/12.1.0/istream /usr/include/c++/12.1.0/bits/istream.tcc \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/ArithmFacade.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/ArithmInjector.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/AddEngine.h \
@@ -182,7 +213,7 @@ CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o: \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/c++/12.1.0/bits/specfun.h \
- /usr/include/c++/12.1.0/limits /usr/include/c++/12.1.0/tr1/gamma.tcc \
+ /usr/include/c++/12.1.0/tr1/gamma.tcc \
  /usr/include/c++/12.1.0/tr1/special_function_util.h \
  /usr/include/c++/12.1.0/tr1/bessel_function.tcc \
  /usr/include/c++/12.1.0/tr1/beta_function.tcc \
@@ -202,40 +233,27 @@ CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o: \
  /usr/include/c++/12.1.0/pstl/glue_numeric_defs.h \
  /usr/include/c++/12.1.0/pstl/execution_defs.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/MulEngine.h \
- /usr/include/c++/12.1.0/thread /usr/include/c++/12.1.0/stop_token \
- /usr/include/c++/12.1.0/atomic \
- /usr/include/c++/12.1.0/bits/atomic_base.h \
- /usr/include/c++/12.1.0/bits/atomic_lockfree_defines.h \
- /usr/include/c++/12.1.0/bits/atomic_wait.h \
- /usr/include/c++/12.1.0/climits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
- /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
- /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
- /usr/include/c++/12.1.0/bits/std_mutex.h \
- /usr/include/c++/12.1.0/bits/std_thread.h \
- /usr/include/c++/12.1.0/bits/unique_ptr.h \
- /usr/include/c++/12.1.0/semaphore \
- /usr/include/c++/12.1.0/bits/semaphore_base.h \
- /usr/include/c++/12.1.0/bits/chrono.h /usr/include/c++/12.1.0/ratio \
- /usr/include/c++/12.1.0/ctime \
- /usr/include/c++/12.1.0/bits/parse_numbers.h \
- /usr/include/c++/12.1.0/bits/atomic_timed_wait.h \
- /usr/include/c++/12.1.0/bits/this_thread_sleep.h /usr/include/sys/time.h \
- /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/PrimalityEngine.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/RsaEngine.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/Buffer.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/BufferView.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Tasks/TaskQueue.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Utility/Singleton.h \
+ /usr/include/c++/12.1.0/condition_variable \
+ /usr/include/c++/12.1.0/bits/unique_lock.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
+ /usr/include/c++/12.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/12.1.0/ext/concurrence.h \
+ /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/mutex \
+ /usr/include/c++/12.1.0/queue /usr/include/c++/12.1.0/deque \
+ /usr/include/c++/12.1.0/bits/stl_deque.h \
+ /usr/include/c++/12.1.0/bits/deque.tcc \
+ /usr/include/c++/12.1.0/bits/stl_heap.h \
+ /usr/include/c++/12.1.0/bits/stl_queue.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./Utility/Logger.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./Utility/Singleton.h \
- /usr/include/c++/12.1.0/mutex /usr/include/c++/12.1.0/bits/unique_lock.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./Utility/RsaKey.h \
  /usr/include/c++/12.1.0/fstream /usr/include/c++/12.1.0/bits/codecvt.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \

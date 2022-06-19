@@ -233,6 +233,8 @@ CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o: \
  /usr/include/c++/12.1.0/pstl/glue_numeric_defs.h \
  /usr/include/c++/12.1.0/pstl/execution_defs.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/MulEngine.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/PrimalityEngine.h \
+ /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Arithm/RsaEngine.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/Buffer.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/./include/Buffer/BufferView.h \
  /home/kamil2/Projects/Studia/C++/RsaDemo/Services/../Tasks/PrimeSync.h \

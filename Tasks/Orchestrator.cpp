@@ -6,18 +6,23 @@
 
 Orchestrator::Orchestrator()
     : _taskQueue(TaskQueue::createInstance()),
-      _executorCount(std::thread::hardware_concurrency()),
+      _executorCount((std::thread::hardware_concurrency())),
       _logger(Logger::getInstance()) {
   initialize();
 }
 
-void Orchestrator::initialize() { _executors = new Executor[_executorCount]; }
+void Orchestrator::initialize() {
+  for (size_t i = 0; i < _executorCount; ++i) {
+    ExecutionContext context{i};
+    _logger.debug("creating thread with context:", context.threadNo);
+    _executors.emplace_back(context);
+  }
+}
 
 void Orchestrator::terminate() {
-  _logger.debug("Terminating");
-
+  _logger.debug("Tearing down task queue");
   _taskQueue.terminate();
-  delete[] _executors;
+  _executors.clear();
   KCrypt::ArithmInjector::releaseInstances();
 }
 

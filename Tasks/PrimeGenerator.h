@@ -8,6 +8,7 @@
 
 class PrimeSync;
 class Logger;
+class ExecutionContext;
 
 class PrimeGenerator : public Task {
   Logger &_logger;
@@ -26,8 +27,8 @@ public:
   PrimeGenerator(const PrimeGenerator &) = delete;
   PrimeGenerator operator=(const PrimeGenerator &) = delete;
 
-  void run(std::thread::id id) override;
-  bool isDone()const;
+  void run(ExecutionContext &context) override;
+  bool isDone() const;
 
   KCrypt::Numeric candidate;
 

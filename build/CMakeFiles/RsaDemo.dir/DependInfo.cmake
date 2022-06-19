@@ -8,9 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/DecodeService.cpp" "CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/EncodeService.cpp" "CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/GenerateService.cpp" "CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/IService.cpp" "CMakeFiles/RsaDemo.dir/Services/IService.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Services/IService.cpp.o.d"
+  "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeSync.cpp" "CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o.d"
+  "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeTask.cpp" "CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.cpp" "CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.cpp" "CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o.d"
   "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeGenerator.cpp" "CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o" "gcc" "CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o.d"

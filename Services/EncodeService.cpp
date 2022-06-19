@@ -1,7 +1,12 @@
 #include "EncodeService.h"
-#include "../Utility/RsaKey.h"
+#include "Tasks/EncodeSync.h"
+#include "Tasks/EncodeTask.h"
+#include "Tasks/TaskQueue.h"
 #include "Utility/Logger.h"
+#include "Utility/RsaKey.h"
+
 #include <fstream>
+#include <latch>
 #include <stdexcept>
 
 EncodeService::EncodeService() : _logger(Logger::getInstance()) {}
@@ -18,6 +23,8 @@ int EncodeService::run(std::unordered_map<std::string, std::string> &args) {
   }
   initialize(args);
 
+  _logger.info("Max task count:", std::latch::max());
+
   std::ifstream sourceFile(_sourceFilename.c_str(), std::ios::binary);
   std::ifstream keyFile(_keyFilename.c_str());
   std::ofstream outputFile(_outputFilename.c_str(), std::ios::binary);
@@ -28,7 +35,9 @@ int EncodeService::run(std::unordered_map<std::string, std::string> &args) {
 
   auto [source, sourceSize] = load(sourceFile);
   _logger.debug("read ", sourceSize, "bytes");
+
   auto [enc, encSize] = encode(source, sourceSize, key);
+
   save(enc, encSize, outputFile);
 
   return 0;
@@ -36,11 +45,11 @@ int EncodeService::run(std::unordered_map<std::string, std::string> &args) {
 
 std::tuple<unsigned char *, size_t> EncodeService::load(std::istream &stream) {
   size_t length;
-  stream.seekg(0,stream.end);
+  stream.seekg(0, stream.end);
   length = stream.tellg();
-  stream.seekg(0,stream.beg);
+  stream.seekg(0, stream.beg);
 
-  _logger.debug("length",length);
+  _logger.debug("length", length);
 
   unsigned char *data = new unsigned char[length];
 
@@ -50,7 +59,48 @@ std::tuple<unsigned char *, size_t> EncodeService::load(std::istream &stream) {
 
 std::tuple<unsigned char *, size_t>
 EncodeService::encode(unsigned char *data, size_t dataSize, RsaKey &key) {
-  return std::make_pair(data, dataSize);
+  auto &queue = TaskQueue::getInstance();
+
+  size_t keySize = key.size() * sizeof(KCrypt::Buffer::BaseInt);
+  size_t inputBlockSize = keySize - 2;
+  size_t outputBlockSize = keySize;
+
+  size_t blockCount = (dataSize + inputBlockSize - 1) / inputBlockSize;
+  size_t outputSize = blockCount * outputBlockSize;
+
+  _logger.info("EncodeService:", "key.size", key.size());
+  _logger.info("EncodeService:", "keySize", keySize);
+  _logger.info("EncodeService:", "inputBlockSize", inputBlockSize);
+  _logger.info("EncodeService:", "outputBlockSize", outputBlockSize);
+  _logger.info("EncodeService:", "blockCount", blockCount);
+  _logger.info("EncodeService:", "outputSize", outputSize);
+
+  size_t outputHeaderSize = sizeof(size_t);
+  unsigned char *output = new unsigned char[outputSize + outputHeaderSize];
+  memcpy(output, &outputSize, outputHeaderSize);
+
+  std::vector<EncodeTask *> tasks;
+
+  EncodeSync sync(blockCount);
+
+  for (size_t i = 0, outputPos = outputHeaderSize, inputPos = 0; i < blockCount;
+       ++i, outputPos += outputBlockSize, inputPos += inputBlockSize) {
+
+    tasks.push_back(new EncodeTask(
+        key, sync, data + inputPos,
+        std::min(inputBlockSize, dataSize - inputPos), output + outputPos));
+
+    queue.push(tasks.back());
+  }
+
+  sync.waitForAllTasks();
+  _logger.debug("Encoding finished");
+
+  for (auto &task : tasks) {
+    delete task;
+  }
+
+  return std::make_pair(output, outputSize);
 }
 
 void EncodeService::save(unsigned char *data, size_t size,

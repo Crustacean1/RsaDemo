@@ -9,16 +9,17 @@ class Logger;
 
 class Orchestrator : public Singleton<Orchestrator> {
   friend Singleton<Orchestrator>;
-  Logger & _logger;
+  Logger &_logger;
 
   volatile const size_t _executorCount;
-  Executor *_executors;
+  std::vector<Executor> _executors;
   TaskQueue &_taskQueue;
 
   Orchestrator();
 
   void initialize();
   void terminate();
+
 public:
   size_t getWorkerCount();
   ~Orchestrator();

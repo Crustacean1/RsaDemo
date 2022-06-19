@@ -3,9 +3,11 @@
 
 #include <thread>
 
+class ExecutionContext;
+
 class Task {
 public:
-  virtual void run(std::thread::id id) = 0;
+  virtual void run(ExecutionContext &context) = 0;
   virtual ~Task(){};
 };
 

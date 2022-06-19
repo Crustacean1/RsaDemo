@@ -1,4 +1,5 @@
 #include "PrimeGenerator.h"
+#include "ExecutionContext.h"
 #include "PrimeSync.h"
 
 #include "../Utility/Logger.h"
@@ -32,10 +33,10 @@ std::vector<KCrypt::Buffer> PrimeGenerator::getWitnesses() {
   return witnesses;
 }
 
-void PrimeGenerator::run(std::thread::id id) {
+void PrimeGenerator::run(ExecutionContext &context) {
 
   auto &add = KCrypt::ArithmInjector::getInstance().getAdd();
-  KCrypt::PrimalityEngine prim(KCrypt::ArithmInjector::getInstance());
+  auto &prim = KCrypt::ArithmInjector::getInstance().getPrim();
 
   initializeCandidate();
   auto witnesses = getWitnesses();
@@ -54,7 +55,7 @@ void PrimeGenerator::run(std::thread::id id) {
       }
       if (i == witnesses.size()) {
         _done = true;
-        _logger.debug(id, "found prime", candidate);
+        _logger.debug(context.threadNo, "found prime", candidate);
         _sync.addPrime();
         _sync.endSearch();
         return;
@@ -62,7 +63,7 @@ void PrimeGenerator::run(std::thread::id id) {
     }
     add.add(candidate.getBuffer(), 2);
   }
-  _logger.debug(id, "finished searching");
+  _logger.debug(context.threadNo, "finished searching");
   _sync.endSearch();
 }
 
