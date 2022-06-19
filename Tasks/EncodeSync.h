@@ -3,13 +3,16 @@
 
 #include <cstddef>
 #include <latch>
+#include <mutex>
 
 class EncodeSync {
   std::latch _allTasksDone;
+  std::mutex _keyMutex;
 
 public:
   EncodeSync(size_t taskCount);
   void finishTask();
+  std::unique_lock<std::mutex> lockKey();
   void waitForAllTasks();
 };
 

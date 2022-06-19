@@ -54,7 +54,7 @@ std::tuple<unsigned char *, size_t> CodeService::load(std::istream &stream) {
 void CodeService::encode(unsigned char *data, size_t dataSize, RsaKey &key) {
   auto &queue = TaskQueue::getInstance();
 
-  std::vector<EncodeTask *> tasks;
+  std::vector<EncodeTask*> tasks;
 
   size_t blockSize = key.size() * sizeof(KCrypt::Buffer::BaseInt);
   size_t blockCount = dataSize / blockSize;

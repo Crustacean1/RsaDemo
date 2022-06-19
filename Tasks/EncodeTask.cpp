@@ -13,7 +13,7 @@ void EncodeTask::run(ExecutionContext &context) {
   auto &rsa = KCrypt::ArithmInjector::getInstance().getRsa();
 
   if (!context.isRsaKeySet) {
-    _logger.debug("Setting rsa key in context: ", context.threadNo);
+    auto lock = _sync.lockKey();
     rsa.setKey(_key.getExponent().getBuffer(), _key.getModulus().getBuffer());
     context.isRsaKeySet = true;
   }
@@ -21,11 +21,7 @@ void EncodeTask::run(ExecutionContext &context) {
   KCrypt::BufferView buffer(reinterpret_cast<KCrypt::Buffer::BaseInt *>(_data),
                             _outputSize / sizeof(KCrypt::Buffer::BaseInt));
 
-  //_logger.debug("In Encryption task", "source buffer", buffer);
-
   rsa.apply(buffer, buffer);
-
-  //_logger.debug("In Encryption task", "output buffer", buffer);
 
   _sync.finishTask();
 }
