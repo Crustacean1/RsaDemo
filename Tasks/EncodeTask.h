@@ -15,15 +15,11 @@ class EncodeTask : public Task {
 
   EncodeSync &_sync;
 
-  unsigned char *_source;
-  size_t _sourceSize;
-
-  unsigned char *_output;
+  unsigned char *_data;
   size_t _outputSize;
 
 public:
-  EncodeTask(RsaKey &key, EncodeSync &sync, unsigned char *source,
-             size_t sourceSize, unsigned char *output);
+  EncodeTask(RsaKey &key, EncodeSync &sync, unsigned char *data);
   void run(ExecutionContext &context) override;
 };
 

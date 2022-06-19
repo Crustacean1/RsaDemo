@@ -5,16 +5,11 @@
 #include "Utility/RsaKey.h"
 #include <ArithmInjector.h>
 
-EncodeTask::EncodeTask(RsaKey &key, EncodeSync &sync, unsigned char *source,
-                       size_t sourceSize, unsigned char *output)
-    : _key(key), _logger(Logger::getInstance()), _sync(sync), _source(source),
-      _sourceSize(sourceSize), _output(output),
+EncodeTask::EncodeTask(RsaKey &key, EncodeSync &sync, unsigned char *data)
+    : _key(key), _logger(Logger::getInstance()), _sync(sync), _data(data),
       _outputSize(key.size() * sizeof(KCrypt::Buffer::BaseInt)) {}
 
 void EncodeTask::run(ExecutionContext &context) {
-  /*_logger.debug("In Encryption task", "source size", _sourceSize);
-  _logger.debug("In Encryption task", "output size", _outputSize);
-  _logger.debug("In Encryption task", "keySize", _key.size());*/
   auto &rsa = KCrypt::ArithmInjector::getInstance().getRsa();
 
   if (!context.isRsaKeySet) {
@@ -23,12 +18,8 @@ void EncodeTask::run(ExecutionContext &context) {
     context.isRsaKeySet = true;
   }
 
-  memset(_output, 0, _outputSize);
-  memcpy(_output, _source, _sourceSize);
-
-  KCrypt::BufferView buffer(
-      reinterpret_cast<KCrypt::Buffer::BaseInt *>(_output),
-      _outputSize / sizeof(KCrypt::Buffer::BaseInt));
+  KCrypt::BufferView buffer(reinterpret_cast<KCrypt::Buffer::BaseInt *>(_data),
+                            _outputSize / sizeof(KCrypt::Buffer::BaseInt));
 
   //_logger.debug("In Encryption task", "source buffer", buffer);
 

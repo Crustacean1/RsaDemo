@@ -1,5 +1,6 @@
-#include "Services/GenerateService.h"
+#include "Services/DecodeService.h"
 #include "Services/EncodeService.h"
+#include "Services/GenerateService.h"
 #include "Tasks/Orchestrator.h"
 #include "Utility/Logger.h"
 #include "Utility/Parser.h"
@@ -15,8 +16,8 @@ int main(int argc, char **argv) {
 
   cliParser.addService<GenerateService>("generate");
   cliParser.addService<EncodeService>("encode");
+  cliParser.addService<DecodeService>("decode");
 
   cliParser.parse(argc, argv);
   cliParser.run();
-
 }

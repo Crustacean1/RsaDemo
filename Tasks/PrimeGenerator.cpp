@@ -16,9 +16,15 @@ bool PrimeGenerator::isDone() const { return _done; }
 
 void PrimeGenerator::initializeCandidate() {
   auto &io = KCrypt::ArithmInjector::getInstance().getIo();
+  auto &cmp = KCrypt::ArithmInjector::getInstance().getCmp();
 
-  io.randomize(candidate.getBuffer(), _engine,
-               KCrypt::IoEngine::Sign::Unsigned);
+  for (;;) {
+    io.randomize(candidate.getBuffer(), _engine,
+                 KCrypt::IoEngine::Sign::Unsigned);
+    if(cmp.leftOffset(candidate.getBuffer()) < 8){
+      break;
+    }
+  }
   candidate.getBuffer().data[0] |= 1;
 }
 
