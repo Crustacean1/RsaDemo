@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kamil2/Projects/Studia/C++/RsaDemo
+CMAKE_SOURCE_DIR = /home/kamil/Projects/Studia/RsaDemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamil2/Projects/Studia/C++/RsaDemo/build
+CMAKE_BINARY_DIR = /home/kamil/Projects/Studia/RsaDemo/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RsaDemo.dir/depend.make
@@ -72,226 +72,226 @@ include CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/main.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/main.cpp.o: ../main.cpp
 CMakeFiles/RsaDemo.dir/main.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RsaDemo.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/main.cpp.o -MF CMakeFiles/RsaDemo.dir/main.cpp.o.d -o CMakeFiles/RsaDemo.dir/main.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RsaDemo.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/main.cpp.o -MF CMakeFiles/RsaDemo.dir/main.cpp.o.d -o CMakeFiles/RsaDemo.dir/main.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/main.cpp
 
 CMakeFiles/RsaDemo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/main.cpp > CMakeFiles/RsaDemo.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/main.cpp > CMakeFiles/RsaDemo.dir/main.cpp.i
 
 CMakeFiles/RsaDemo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/main.cpp -o CMakeFiles/RsaDemo.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/main.cpp -o CMakeFiles/RsaDemo.dir/main.cpp.s
 
 CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o: ../Utility/Logger.cpp
 CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o -MF CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o.d -o CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o -MF CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o.d -o CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Utility/Logger.cpp
 
 CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Logger.cpp > CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Utility/Logger.cpp > CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.i
 
 CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Logger.cpp -o CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Utility/Logger.cpp -o CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.s
 
 CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o: ../Utility/Parser.cpp
 CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o -MF CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o.d -o CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o -MF CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o.d -o CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Utility/Parser.cpp
 
 CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Parser.cpp > CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Utility/Parser.cpp > CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.i
 
 CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Parser.cpp -o CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Utility/Parser.cpp -o CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.s
 
 CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o: ../Utility/RsaKey.cpp
 CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o -MF CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o.d -o CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/RsaKey.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o -MF CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o.d -o CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Utility/RsaKey.cpp
 
 CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/RsaKey.cpp > CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Utility/RsaKey.cpp > CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.i
 
 CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/RsaKey.cpp -o CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Utility/RsaKey.cpp -o CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.s
 
 CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o: ../Services/CodeService.cpp
 CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/CodeService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/CodeService.cpp
 
 CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Services/CodeService.cpp > CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Services/CodeService.cpp > CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.i
 
 CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Services/CodeService.cpp -o CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Services/CodeService.cpp -o CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.s
 
 CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o: ../Services/DecodeService.cpp
 CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/DecodeService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/DecodeService.cpp
 
 CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Services/DecodeService.cpp > CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Services/DecodeService.cpp > CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.i
 
 CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Services/DecodeService.cpp -o CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Services/DecodeService.cpp -o CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.s
 
 CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o: ../Services/EncodeService.cpp
 CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/EncodeService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/EncodeService.cpp
 
 CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Services/EncodeService.cpp > CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Services/EncodeService.cpp > CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.i
 
 CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Services/EncodeService.cpp -o CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Services/EncodeService.cpp -o CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.s
 
 CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o: ../Services/GenerateService.cpp
 CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/GenerateService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/GenerateService.cpp
 
 CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Services/GenerateService.cpp > CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Services/GenerateService.cpp > CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.i
 
 CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Services/GenerateService.cpp -o CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Services/GenerateService.cpp -o CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.s
 
 CMakeFiles/RsaDemo.dir/Services/IService.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Services/IService.cpp.o: ../Services/IService.cpp
 CMakeFiles/RsaDemo.dir/Services/IService.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RsaDemo.dir/Services/IService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/IService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/IService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/IService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/IService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RsaDemo.dir/Services/IService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Services/IService.cpp.o -MF CMakeFiles/RsaDemo.dir/Services/IService.cpp.o.d -o CMakeFiles/RsaDemo.dir/Services/IService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/IService.cpp
 
 CMakeFiles/RsaDemo.dir/Services/IService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Services/IService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Services/IService.cpp > CMakeFiles/RsaDemo.dir/Services/IService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Services/IService.cpp > CMakeFiles/RsaDemo.dir/Services/IService.cpp.i
 
 CMakeFiles/RsaDemo.dir/Services/IService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Services/IService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Services/IService.cpp -o CMakeFiles/RsaDemo.dir/Services/IService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Services/IService.cpp -o CMakeFiles/RsaDemo.dir/Services/IService.cpp.s
 
 CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o: ../Tasks/EncodeSync.cpp
 CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeSync.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeSync.cpp
 
 CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeSync.cpp > CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeSync.cpp > CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.i
 
 CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeSync.cpp -o CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeSync.cpp -o CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.s
 
 CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o: ../Tasks/EncodeTask.cpp
 CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeTask.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeTask.cpp
 
 CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeTask.cpp > CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeTask.cpp > CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.i
 
 CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/EncodeTask.cpp -o CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeTask.cpp -o CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.s
 
 CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o: ../Tasks/Executor.cpp
 CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/Executor.cpp
 
 CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.cpp > CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Tasks/Executor.cpp > CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.i
 
 CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.cpp -o CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Tasks/Executor.cpp -o CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.s
 
 CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o: ../Tasks/Orchestrator.cpp
 CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/Orchestrator.cpp
 
 CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.cpp > CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Tasks/Orchestrator.cpp > CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.i
 
 CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.cpp -o CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Tasks/Orchestrator.cpp -o CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.s
 
 CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o: ../Tasks/PrimeGenerator.cpp
 CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeGenerator.cpp
 
 CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeGenerator.cpp > CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeGenerator.cpp > CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.i
 
 CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeGenerator.cpp -o CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeGenerator.cpp -o CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.s
 
 CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o: ../Tasks/PrimeSync.cpp
 CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeSync.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeSync.cpp
 
 CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeSync.cpp > CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeSync.cpp > CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.i
 
 CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeSync.cpp -o CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeSync.cpp -o CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.s
 
 CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o: CMakeFiles/RsaDemo.dir/flags.make
 CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o: ../Tasks/TaskQueue.cpp
 CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o: CMakeFiles/RsaDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o -MF CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o.d -o CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/TaskQueue.cpp
 
 CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.cpp > CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Projects/Studia/RsaDemo/Tasks/TaskQueue.cpp > CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.i
 
 CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.cpp -o CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Projects/Studia/RsaDemo/Tasks/TaskQueue.cpp -o CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.s
 
 # Object files for target RsaDemo
 RsaDemo_OBJECTS = \
@@ -334,7 +334,7 @@ RsaDemo: CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o
 RsaDemo: CMakeFiles/RsaDemo.dir/build.make
 RsaDemo: ../lib/libnumeric.a
 RsaDemo: CMakeFiles/RsaDemo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable RsaDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable RsaDemo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RsaDemo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -346,6 +346,6 @@ CMakeFiles/RsaDemo.dir/clean:
 .PHONY : CMakeFiles/RsaDemo.dir/clean
 
 CMakeFiles/RsaDemo.dir/depend:
-	cd /home/kamil2/Projects/Studia/C++/RsaDemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil2/Projects/Studia/C++/RsaDemo /home/kamil2/Projects/Studia/C++/RsaDemo /home/kamil2/Projects/Studia/C++/RsaDemo/build /home/kamil2/Projects/Studia/C++/RsaDemo/build /home/kamil2/Projects/Studia/C++/RsaDemo/build/CMakeFiles/RsaDemo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kamil/Projects/Studia/RsaDemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil/Projects/Studia/RsaDemo /home/kamil/Projects/Studia/RsaDemo /home/kamil/Projects/Studia/RsaDemo/build /home/kamil/Projects/Studia/RsaDemo/build /home/kamil/Projects/Studia/RsaDemo/build/CMakeFiles/RsaDemo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RsaDemo.dir/depend
 

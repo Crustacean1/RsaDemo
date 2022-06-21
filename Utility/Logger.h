@@ -17,6 +17,7 @@ public:
   template <typename... Args> void debug(Args... args);
   template <typename... Args> void info(Args... args);
   template <typename... Args> void error(Args... args);
+  template <typename... Args> void progress(Args... args);
 
 private:
   template <typename... Args, typename T> void log(T first, Args... args);
@@ -31,24 +32,30 @@ void Logger::log(T first, Args... args) {
   std::unique_lock<std::mutex> lock(_logMutex);
   _stream << first;
   ((_stream << "\t" << args), ...);
-  _stream << std::endl;
+  _stream<<std::flush;
 }
 
 template <typename... Args> void Logger::debug(Args... args) {
   if (_verbosity >= Verbosity::Debug) {
-    log("[DEBUG]", std::move(args)...);
+    log("[DEBUG]", std::move(args)..., "\n");
   }
 }
 
 template <typename... Args> void Logger::info(Args... args) {
   if (_verbosity >= Verbosity::Info) {
-    log("[INFO]", std::move(args)...);
+    log("[INFO]", std::move(args)..., "\n");
   }
 }
 
 template <typename... Args> void Logger::error(Args... args) {
   if (_verbosity >= Verbosity::Error) {
-    log("[ERROR]", std::move(args)...);
+    log("[ERROR]", std::move(args)..., "\n");
+  }
+}
+
+template <typename... Args> void Logger::progress(Args... args) {
+  if (_verbosity >= Verbosity::Error) {
+    log("[PROGRESS]", std::move(args)...,"\r");
   }
 }
 #endif /*LOGGER*/

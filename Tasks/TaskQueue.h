@@ -2,7 +2,7 @@
 #define TASK_QUEUE
 
 #include "Task.h"
-#include "Utility/Singleton.h"
+#include "../Utility/Singleton.h"
 #include <condition_variable>
 #include <mutex>
 #include <queue>

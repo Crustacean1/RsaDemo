@@ -8,7 +8,7 @@
 
 int main(int argc, char **argv) {
 
-  Logger::createInstance(std::cout, Verbosity::Debug);
+  Logger::createInstance(std::cout, Verbosity::Info);
 
   Orchestrator &orchestrator = Orchestrator::createInstance();
 

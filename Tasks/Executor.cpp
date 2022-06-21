@@ -3,7 +3,11 @@
 #include <iostream>
 
 Executor::Executor(ExecutionContext context)
-    : _thread(&Executor::run, std::ref(TaskQueue::getInstance()), context) {}
+    : _thread(&Executor::run, std::ref(TaskQueue::getInstance()), context) {
+
+  auto &logger = Logger::getInstance();
+  logger.debug("Created thread with context:", context.threadNo);
+}
 
 Executor::Executor(Executor &&exec) : _thread(std::move(exec._thread)) {}
 

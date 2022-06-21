@@ -1,62 +1,82 @@
 [
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/main.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/main.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/main.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/main.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/main.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/main.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Logger.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Logger.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Utility/Logger.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Utility/Logger.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Utility/Logger.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Parser.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Utility/Parser.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Utility/Parser.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Utility/Parser.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Utility/Parser.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Utility/RsaKey.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Utility/RsaKey.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Utility/RsaKey.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Utility/RsaKey.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Utility/RsaKey.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/EncodeService.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/EncodeService.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/CodeService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/CodeService.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Services/CodeService.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/GenerateService.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/GenerateService.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/DecodeService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/DecodeService.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Services/DecodeService.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/IService.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Services/IService.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Services/IService.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/EncodeService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/EncodeService.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Services/EncodeService.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Executor.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/GenerateService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/GenerateService.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Services/GenerateService.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/Orchestrator.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Services/IService.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Services/IService.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Services/IService.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeGenerator.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeGenerator.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeSync.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeSync.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeSync.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/PrimeSync.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeTask.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Tasks/EncodeTask.cpp"
 },
 {
-  "directory": "/home/kamil2/Projects/Studia/C++/RsaDemo",
-  "command": "/usr/bin/c++  -I/home/kamil2/Projects/Studia/C++/RsaDemo/./include -I/home/kamil2/Projects/Studia/C++/RsaDemo/. -I\"/home/kamil2/Projects/Studia/C++/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o -c /home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.cpp",
-  "file": "/home/kamil2/Projects/Studia/C++/RsaDemo/Tasks/TaskQueue.cpp"
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/Executor.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/Executor.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Tasks/Executor.cpp"
+},
+{
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/Orchestrator.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Tasks/Orchestrator.cpp"
+},
+{
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/PrimeGenerator.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeGenerator.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeGenerator.cpp"
+},
+{
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/PrimeSync.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeSync.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Tasks/PrimeSync.cpp"
+},
+{
+  "directory": "/home/kamil/Projects/Studia/RsaDemo",
+  "command": "/usr/bin/c++  -I/home/kamil/Projects/Studia/RsaDemo/./include -I/home/kamil/Projects/Studia/RsaDemo/. -I\"/home/kamil/Projects/Studia/RsaDemo/./*\"  -std=c++20 -g -std=gnu++20 -o CMakeFiles/RsaDemo.dir/Tasks/TaskQueue.cpp.o -c /home/kamil/Projects/Studia/RsaDemo/Tasks/TaskQueue.cpp",
+  "file": "/home/kamil/Projects/Studia/RsaDemo/Tasks/TaskQueue.cpp"
 }
 ]

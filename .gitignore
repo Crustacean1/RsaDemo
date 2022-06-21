@@ -7,3 +7,6 @@ CMakeFiles
 .cache/
 .clangd
 vgcore\.*
+latex/
+html/
+build/

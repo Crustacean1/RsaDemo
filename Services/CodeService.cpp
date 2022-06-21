@@ -1,9 +1,9 @@
 #include "CodeService.h"
-#include "Tasks/EncodeSync.h"
-#include "Tasks/EncodeTask.h"
-#include "Tasks/TaskQueue.h"
-#include "Utility/Logger.h"
-#include "Utility/RsaKey.h"
+#include "../Tasks/EncodeSync.h"
+#include "../Tasks/EncodeTask.h"
+#include "../Tasks/TaskQueue.h"
+#include "../Utility/Logger.h"
+#include "../Utility/RsaKey.h"
 #include <Numeric.h>
 #include <fstream>
 
@@ -59,7 +59,6 @@ void CodeService::encode(unsigned char *data, size_t dataSize, RsaKey &key) {
 
   EncodeSync sync(blockCount);
 
-  // TODO: Replace with emplace
   for (size_t i = 0, dataPos = 0; i < blockCount; ++i, dataPos += blockSize) {
     tasks.push_back(new EncodeTask(key, sync, data + dataPos));
     queue.push(tasks.back());

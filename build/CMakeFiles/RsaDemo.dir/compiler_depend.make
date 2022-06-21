@@ -1762,7 +1762,42 @@ CMakeFiles/RsaDemo.dir/Tasks/EncodeSync.cpp.o: ../Tasks/EncodeSync.cpp \
   /usr/include/c++/12.1.0/limits \
   /usr/include/c++/12.1.0/ctime \
   /usr/include/c++/12.1.0/bits/parse_numbers.h \
-  /usr/include/c++/12.1.0/bits/unique_lock.h
+  /usr/include/c++/12.1.0/bits/unique_lock.h \
+  ../Utility/Logger.h \
+  ../Utility/Singleton.h \
+  /usr/include/c++/12.1.0/ostream \
+  /usr/include/c++/12.1.0/ios \
+  /usr/include/c++/12.1.0/bits/ios_base.h \
+  /usr/include/c++/12.1.0/bits/locale_classes.h \
+  /usr/include/c++/12.1.0/bits/locale_classes.tcc \
+  /usr/include/c++/12.1.0/streambuf \
+  /usr/include/c++/12.1.0/bits/streambuf.tcc \
+  /usr/include/c++/12.1.0/bits/basic_ios.h \
+  /usr/include/c++/12.1.0/bits/locale_facets.h \
+  /usr/include/c++/12.1.0/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/12.1.0/bits/streambuf_iterator.h \
+  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/include/c++/12.1.0/bits/locale_facets.tcc \
+  /usr/include/c++/12.1.0/bits/basic_ios.tcc \
+  /usr/include/c++/12.1.0/bits/ostream.tcc \
+  /usr/include/c++/12.1.0/thread \
+  /usr/include/c++/12.1.0/stop_token \
+  /usr/include/c++/12.1.0/atomic \
+  /usr/include/c++/12.1.0/bits/std_thread.h \
+  /usr/include/c++/12.1.0/bits/unique_ptr.h \
+  /usr/include/c++/12.1.0/semaphore \
+  /usr/include/c++/12.1.0/bits/semaphore_base.h \
+  /usr/include/c++/12.1.0/bits/atomic_timed_wait.h \
+  /usr/include/c++/12.1.0/bits/this_thread_sleep.h \
+  /usr/include/sys/time.h \
+  /usr/include/semaphore.h \
+  /usr/include/bits/semaphore.h \
+  /usr/include/c++/12.1.0/iostream \
+  /usr/include/c++/12.1.0/istream \
+  /usr/include/c++/12.1.0/bits/istream.tcc
 
 CMakeFiles/RsaDemo.dir/Tasks/EncodeTask.cpp.o: ../Tasks/EncodeTask.cpp \
   /usr/include/stdc-predef.h \
@@ -2588,7 +2623,6 @@ CMakeFiles/RsaDemo.dir/Tasks/Orchestrator.cpp.o: ../Tasks/Orchestrator.cpp \
   /usr/include/sys/time.h \
   /usr/include/semaphore.h \
   /usr/include/bits/semaphore.h \
-  ../Utility/Singleton.h \
   /usr/include/c++/12.1.0/condition_variable \
   /usr/include/c++/12.1.0/bits/unique_lock.h \
   /usr/include/c++/12.1.0/bits/shared_ptr.h \
@@ -4525,7 +4559,6 @@ CMakeFiles/RsaDemo.dir/main.cpp.o: ../main.cpp \
   /usr/include/sys/time.h \
   /usr/include/semaphore.h \
   /usr/include/bits/semaphore.h \
-  ../Utility/Singleton.h \
   /usr/include/c++/12.1.0/condition_variable \
   /usr/include/c++/12.1.0/bits/unique_lock.h \
   /usr/include/c++/12.1.0/bits/shared_ptr.h \

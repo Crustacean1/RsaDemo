@@ -1,9 +1,9 @@
 #include "GenerateService.h"
-#include "../Tasks/PrimeGenerator.h"
-#include "../Tasks/PrimeSync.h"
-#include "../Tasks/TaskQueue.h"
-#include "../Utility/Logger.h"
-#include "../Utility/RsaKey.h"
+#include "Tasks/PrimeGenerator.h"
+#include "Tasks/PrimeSync.h"
+#include "Tasks/TaskQueue.h"
+#include "Utility/Logger.h"
+#include "Utility/RsaKey.h"
 
 #include <Arithm/RsaEngine.h>
 #include <ArithmInjector.h>
@@ -52,8 +52,6 @@ int GenerateService::run(std::unordered_map<std::string, std::string> &args) {
 
 std::tuple<KCrypt::Numeric, KCrypt::Numeric, KCrypt::Numeric>
 GenerateService::createKey(KCrypt::Numeric &prime1, KCrypt::Numeric &prime2) {
-  std::cout << "Prime1: " << prime1 << std::endl;
-  std::cout << "Prime2: " << prime2 << std::endl;
 
   KCrypt::RsaEngine rsa(KCrypt::ArithmInjector::getInstance());
 

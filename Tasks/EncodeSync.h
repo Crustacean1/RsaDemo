@@ -4,15 +4,19 @@
 #include <cstddef>
 #include <latch>
 #include <mutex>
+#include <cstddef>
+
+class Logger;
 
 class EncodeSync {
   std::latch _allTasksDone;
-  std::mutex _keyMutex;
+  size_t _allTaskCount;
+  size_t _taskCount;
+  Logger &_logger;
 
 public:
   EncodeSync(size_t taskCount);
   void finishTask();
-  std::unique_lock<std::mutex> lockKey();
   void waitForAllTasks();
 };
 
